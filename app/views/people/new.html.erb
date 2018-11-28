@@ -1,2 +1,23 @@
-<h1>People#new</h1>
-<p>Find me in app/views/people/new.html.erb</p>
+<h1>People Form</h1>
+
+<%= form_for.each do |f|%>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true "\n" %>
+
+    <%= f.label :age %>
+    <%= f.text_field :age, required: true %>
+
+    <%= f.label :hair_color %>
+    <%= f.text_field :hair_color %>
+
+    <%= f.label :eye_color %>
+    <%= f.text_field :eye_color %>
+
+    <%= f.label :gender %>
+    <%= f.text_field :gender, required: true%>
+
+    <%= f.label :alive %>
+    <%= f.text_field :alive %>
+
+    <%= f.submit %>
+<% end %>

@@ -1,2 +1,24 @@
-<h1>People#show</h1>
-<p>Find me in app/views/people/show.html.erb</p>
+<h1><%= @person.name %></h1>
+
+<%= link_to 'View Person', person_path(@person) %>
+<%= link_to 'Edit Person', edit_person_path(@person) %>
+<%= link_to 'Delete Person', @person, method: :delete %>
+
+<style>
+
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
+}
+
+</style>
